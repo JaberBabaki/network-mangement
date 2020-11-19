@@ -1,0 +1,15 @@
+Nov 20 02:44:02.850 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 20 02:44:02.853 HYPERVISOR: Started on IP = 192.168.136.1, TCP port = 16439.
+Nov 20 02:44:03.283 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 20 02:44:03.284 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jaberALU\GNS3\projects\topology\project-files\dynamips 
+Nov 20 02:44:03.286 GENERAL: working_dir=C:\Users\jaberALU\GNS3\projects\topology\project-files\dynamips
+Nov 20 02:44:03.286 HYPERVISOR: exec_cmd: ethsw create Ethernetswitch-1 
+Nov 20 02:44:04.991 HYPERVISOR: exec_cmd: nio create_udp udp-8abb933b-00a3-4ff6-89f6-f8d6f7e04a73 10005 192.168.136.131 10003 
+Nov 20 02:44:04.993 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-1 udp-8abb933b-00a3-4ff6-89f6-f8d6f7e04a73 
+Nov 20 02:44:05.001 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-1 udp-8abb933b-00a3-4ff6-89f6-f8d6f7e04a73 1 
+Nov 20 02:44:05.286 HYPERVISOR: exec_cmd: nio create_udp udp-5deb3aca-c55d-4746-a72f-a888929cd89f 10006 192.168.136.131 10004 
+Nov 20 02:44:05.288 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-1 udp-5deb3aca-c55d-4746-a72f-a888929cd89f 
+Nov 20 02:44:05.302 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-1 udp-5deb3aca-c55d-4746-a72f-a888929cd89f 1 
+Nov 20 02:44:05.704 HYPERVISOR: exec_cmd: nio create_udp udp-b0fa815f-3261-4316-9dde-7e4f01d33e94 10000 192.168.136.1 10002 
+Nov 20 02:44:05.705 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-1 udp-b0fa815f-3261-4316-9dde-7e4f01d33e94 
+Nov 20 02:44:05.726 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-1 udp-b0fa815f-3261-4316-9dde-7e4f01d33e94 1 

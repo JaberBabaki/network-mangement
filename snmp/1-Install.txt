@@ -1,0 +1,48 @@
+#IP
+1-conf t
+2-interface fastethernet 0/0
+2-ip address 192.168.10.109 255.255.255.0
+3- no shutdown
+
+#hostname
+1-hostname farscape
+
+#ssh 
+1-conf t
+2-ip domain-name jaber 
+3-crypto keys generate rsa general-keys modules 1024
+4-ip ssh version2
+5-ip ssh time-out 15
+6-ip authentication-retries 2
+
+#user
+1-conf t
+2-username jaber privilege 15 password jaber
+3-line vty 0 4
+4-login local 
+5-transport input ssh
+6-privilege level 15
+7-end
+
+
+*ssh is ok
+
+*install ansible
+1- sudo apt-get update
+2- sudo apt-get install ansible  
+3-sudo yum install ansible -y  
+
+*ssh key
+1- ssh-keygen -t rsa -b 4096 -C "jaber" 
+
+*setting webservers ansible
+1- define varable and user ssh and pass
+
+*module ios 
+1-show web in ios module
+
+*show running-config
+
+*install snmp
+
+

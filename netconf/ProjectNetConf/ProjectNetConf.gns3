@@ -1,0 +1,124 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "name": "ProjectNetConf",
+    "project_id": "5d9d8480-493e-4684-a3d4-fe0b59be46a7",
+    "revision": 8,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "show_grid": false,
+    "show_interface_labels": false,
+    "show_layers": false,
+    "snap_to_grid": false,
+    "topology": {
+        "computes": [],
+        "drawings": [],
+        "links": [
+            {
+                "filters": {},
+                "link_id": "d8d62589-ba37-4ee8-b574-2c7435969e30",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/0",
+                            "x": 72,
+                            "y": 29
+                        },
+                        "node_id": "bd8ddb9e-3c10-40e0-a4db-e4716943ab9a",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/0",
+                            "x": -7,
+                            "y": 29
+                        },
+                        "node_id": "160d8d1c-6230-4637-98f9-3f348745b0f1",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "local",
+                "console": 5000,
+                "console_type": "telnet",
+                "first_port_name": "",
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "com.cisco.ios-xrv-1",
+                    "x": -34,
+                    "y": -25
+                },
+                "name": "com.cisco.ios-xrv-1",
+                "node_id": "bd8ddb9e-3c10-40e0-a4db-e4716943ab9a",
+                "node_type": "virtualbox",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "acpi_shutdown": true,
+                    "adapter_type": "PCnet-PCI II (Am79C970A)",
+                    "adapters": 4,
+                    "headless": true,
+                    "linked_clone": true,
+                    "ram": 8192,
+                    "use_any_adapter": true,
+                    "vmname": "com.cisco.ios-xrv-1"
+                },
+                "symbol": ":/symbols/vbox_guest.svg",
+                "width": 65,
+                "x": -272,
+                "y": -87,
+                "z": 0
+            },
+            {
+                "compute_id": "local",
+                "console": 5002,
+                "console_type": "telnet",
+                "first_port_name": "",
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "com.cisco.ios-xrv-3",
+                    "x": -34,
+                    "y": -25
+                },
+                "name": "com.cisco.ios-xrv-3",
+                "node_id": "160d8d1c-6230-4637-98f9-3f348745b0f1",
+                "node_type": "virtualbox",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "acpi_shutdown": true,
+                    "adapter_type": "PCnet-PCI II (Am79C970A)",
+                    "adapters": 4,
+                    "headless": true,
+                    "linked_clone": true,
+                    "ram": 8192,
+                    "use_any_adapter": true,
+                    "vmname": "com.cisco.ios-xrv-3"
+                },
+                "symbol": ":/symbols/vbox_guest.svg",
+                "width": 65,
+                "x": 142,
+                "y": -88,
+                "z": 0
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "2.1.4",
+    "zoom": 100
+}

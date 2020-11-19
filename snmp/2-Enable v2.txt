@@ -1,0 +1,11 @@
+#net-snmp
+1-sudo apt-get update
+2-sudo apt-get install snmpd
+
+#find oid
+
+#show play book view
+
+#show run
+
+#snmp-walk

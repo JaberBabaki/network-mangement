@@ -1,0 +1,45 @@
+rwuser initial authpriv
+createUser initial MD5 jaber660 DES jaber660
+
+------------------------
+createView NAME SUBTREE
+
+createSec2Group MODEL SECURITYNAME GROUPNAME
+MODEL
+1 - reserved for SNMPv1
+2 - reserved for SNMPv2c
+3 - User-based Security Model (USM)
+
+createAccess GROUPNAME MODEL LEVEL CONTEXTMATCH READVIEW WRITEVIEW NOTIFYVIEW
+LEVEL
+1 - noAuthNoPriv
+2 - authNoPriv
+3 - authPriv
+
+------------------------
+
+#1:
+#view
+snmpvacm -v 3 -u initial -l authpriv -a MD5 -A jaber660 -x DES -X jaber660 localhost createView sysview .1.3.6.1.2.1.1
+#userA
+snmpusm -v3 -u initial -l authpriv -a MD5 -A jaber660 -x DES -X jaber660 localhost create usrA initial
+#userA add to groupA
+snmpvacm -v 3 -u initial -l authpriv -a MD5 -A jaber660 -x DES -X jaber660 localhost createSec2Group 3 usrA GroupA
+#access
+snmpvacm -v 3 -u initial -l authpriv -a MD5 -A jaber660 -x DES -X jaber660 localhost createAccess GroupA 3 3 1 sysview sysview none
+
+#2:
+snmpvacm -v 3 -u initial -l authPriv -a MD5 -A jaber660 -x DES -X jaber660 localhost createAccess GroupA 3 2 1 sysview none none
+
+#3:
+#view interface
+snmpvacm -v 3 -u initial -l authpriv -a MD5 -A jaber660 -x DES -X jaber660 localhost createView intview .1.3.6.1.2.1.2
+#userB
+snmpusm -v3 -u initial -l authpriv -a MD5 -A jaber660 -x DES -X jaber660 localhost create usrB initial
+#add userB to groupB
+snmpvacm -v 3 -u initial -l authpriv -a MD5 -A jaber660 -x DES -X jaber660 localhost createSec2Group 3 usrB GroupB
+#access
+snmpvacm -v 3 -u initial -l authpriv -a MD5 -A jaber660 -x DES -X jaber660 localhost createAccess GroupB 3 1 1 intview intview none
+
+#4:
+snmpvacm -v3 -u initial -l authPriv -a MD5 -A jaber660 -x DES -X jaber660 localhost createAccess GroupB 2 1 1 intview none none

@@ -1,0 +1,502 @@
+<ns0:VirtualBox xmlns:ns0="http://www.virtualbox.org/" version="1.15-windows">
+  <ns0:Machine OSType="Other" currentSnapshot="{ccaf3746-3ce5-46e7-a051-b55d776e9872}" lastStateChange="2018-04-11T13:07:26Z" name="com.cisco.ios-xrv-1" snapshotFolder="Snapshots" uuid="{bd8ddb9e-3c10-40e0-a4db-e4716943ab9a}">
+    <ns0:MediaRegistry>
+      <ns0:HardDisks>
+        <ns0:HardDisk format="VMDK" location="C:/Users/jaberALU/VirtualBox VMs/com.cisco.ios-xrv/iosxrv-demo.vmdk" type="Normal" uuid="{492b61d7-41e8-40c1-a08d-b424391a66fa}">
+          <ns0:HardDisk format="VMDK" location="Snapshots/{9ad366ef-6f8f-479d-b3e8-ae0c42ee8a8e}.vmdk" uuid="{9ad366ef-6f8f-479d-b3e8-ae0c42ee8a8e}">
+            <ns0:HardDisk format="VMDK" location="Snapshots/{9313c337-04e2-4d8b-aced-445729d9b8f3}.vmdk" uuid="{9313c337-04e2-4d8b-aced-445729d9b8f3}">
+              <ns0:HardDisk format="VMDK" location="Snapshots/{4ad8ceaf-b3e8-4dda-82d1-89dbe7e85537}.vmdk" uuid="{4ad8ceaf-b3e8-4dda-82d1-89dbe7e85537}">
+                <ns0:HardDisk format="VMDK" location="Snapshots/{3ded66eb-bd22-4886-8254-d51c94aaaf02}.vmdk" uuid="{3ded66eb-bd22-4886-8254-d51c94aaaf02}" />
+              </ns0:HardDisk>
+            </ns0:HardDisk>
+          </ns0:HardDisk>
+        </ns0:HardDisk>
+      </ns0:HardDisks>
+    </ns0:MediaRegistry>
+    <ns0:ExtraData>
+      <ns0:ExtraDataItem name="GNS3/Clone" value="yes" />
+      <ns0:ExtraDataItem name="GUI/LastNormalWindowPosition" value="363,103,720,442" />
+    </ns0:ExtraData>
+    <ns0:Snapshot name="reset" timeStamp="2018-04-10T18:08:32Z" uuid="{0ebdcf57-03b5-45ec-8940-e32d8d0ca219}">
+      <ns0:Hardware>
+        <ns0:CPU count="8">
+          <ns0:PAE enabled="true" />
+          <ns0:LongMode enabled="false" />
+          <ns0:HardwareVirtExLargePages enabled="true" />
+        </ns0:CPU>
+        <ns0:Memory RAMSize="8192" />
+        <ns0:Paravirt provider="Default" />
+        <ns0:Boot>
+          <ns0:Order device="HardDisk" position="1" />
+          <ns0:Order device="None" position="2" />
+          <ns0:Order device="None" position="3" />
+          <ns0:Order device="None" position="4" />
+        </ns0:Boot>
+        <ns0:Display VRAMSize="4" />
+        <ns0:VideoCapture fps="25" options="ac_enabled=false" />
+        <ns0:RemoteDisplay enabled="false" />
+        <ns0:BIOS>
+          <ns0:IOAPIC enabled="true" />
+        </ns0:BIOS>
+        <ns0:Network>
+          <ns0:Adapter MACAddress="080027D9E314" cable="true" enabled="true" slot="0" type="Am79C973">
+            <ns0:DisabledModes>
+              <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+              <ns0:InternalNetwork name="intnet" />
+              <ns0:NATNetwork name="NatNetwork" />
+            </ns0:DisabledModes>
+            <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+          </ns0:Adapter>
+          <ns0:Adapter MACAddress="080027636C05" enabled="true" slot="1" type="virtio">
+            <ns0:DisabledModes>
+              <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+              <ns0:InternalNetwork name="intnet" />
+              <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+              <ns0:NATNetwork name="NatNetwork" />
+            </ns0:DisabledModes>
+            <ns0:GenericInterface driver="UDPTunnel">
+              <ns0:Property name="dest" value="127.0.0.1" />
+              <ns0:Property name="dport" value="10003" />
+              <ns0:Property name="sport" value="10002" />
+            </ns0:GenericInterface>
+          </ns0:Adapter>
+          <ns0:Adapter MACAddress="0800275A992A" enabled="true" slot="2" type="virtio">
+            <ns0:DisabledModes>
+              <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+              <ns0:InternalNetwork name="intnet" />
+              <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+              <ns0:NATNetwork name="NatNetwork" />
+            </ns0:DisabledModes>
+            <ns0:GenericInterface driver="UDPTunnel">
+              <ns0:Property name="dest" value="127.0.0.1" />
+              <ns0:Property name="dport" value="10005" />
+              <ns0:Property name="sport" value="10004" />
+            </ns0:GenericInterface>
+          </ns0:Adapter>
+          <ns0:Adapter MACAddress="08002718D197" enabled="true" slot="3" type="virtio">
+            <ns0:DisabledModes>
+              <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+              <ns0:InternalNetwork name="intnet" />
+              <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+              <ns0:NATNetwork name="NatNetwork" />
+            </ns0:DisabledModes>
+            <ns0:GenericInterface driver="UDPTunnel">
+              <ns0:Property name="dest" value="127.0.0.1" />
+              <ns0:Property name="dport" value="10007" />
+              <ns0:Property name="sport" value="10006" />
+            </ns0:GenericInterface>
+          </ns0:Adapter>
+          <ns0:Adapter MACAddress="0800276F19EC" cable="true" slot="4" type="Am79C973">
+            <ns0:DisabledModes>
+              <ns0:InternalNetwork name="intnet" />
+              <ns0:NATNetwork name="NatNetwork" />
+            </ns0:DisabledModes>
+            <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+          </ns0:Adapter>
+          <ns0:Adapter MACAddress="080027321D44" cable="true" slot="5" type="Am79C973">
+            <ns0:DisabledModes>
+              <ns0:InternalNetwork name="intnet" />
+              <ns0:NATNetwork name="NatNetwork" />
+            </ns0:DisabledModes>
+            <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+          </ns0:Adapter>
+          <ns0:Adapter MACAddress="080027495996" cable="true" slot="6" type="Am79C973">
+            <ns0:DisabledModes>
+              <ns0:InternalNetwork name="intnet" />
+              <ns0:NATNetwork name="NatNetwork" />
+            </ns0:DisabledModes>
+            <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+          </ns0:Adapter>
+          <ns0:Adapter MACAddress="080027278125" cable="true" slot="7" type="Am79C973">
+            <ns0:DisabledModes>
+              <ns0:InternalNetwork name="intnet" />
+              <ns0:NATNetwork name="NatNetwork" />
+            </ns0:DisabledModes>
+            <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+          </ns0:Adapter>
+        </ns0:Network>
+        <ns0:UART>
+          <ns0:Port IOBase="0x3f8" IRQ="4" enabled="true" hostMode="HostPipe" path="\\.\pipe\gns3_vbox\ab1bc214-8ef4-4ff9-9d54-f379e967bc8c" server="true" slot="0" />
+        </ns0:UART>
+        <ns0:AudioAdapter driver="DirectSound" enabled="true" enabledIn="false" enabledOut="false" />
+        <ns0:GuestProperties>
+          <ns0:GuestProperty flags="" name="/VirtualBox/HostInfo/GUI/LanguageID" timestamp="1523377797944458400" value="C" />
+          <ns0:GuestProperty flags="" name="NameInGNS3" timestamp="1523377797955212800" value="com.cisco.ios-xrv-1" />
+          <ns0:GuestProperty flags="" name="ProjectDirInGNS3" timestamp="1523377798007026200" value="C:\Users\jaberALU\GNS3\projects\XRV2\project-files\virtualbox\ab1bc214-8ef4-4ff9-9d54-f379e967bc8c" />
+        </ns0:GuestProperties>
+      </ns0:Hardware>
+      <ns0:StorageControllers>
+        <ns0:StorageController Bootable="true" PortCount="2" name="IDE" type="PIIX4" useHostIOCache="true">
+          <ns0:AttachedDevice device="0" hotpluggable="false" port="0" type="HardDisk">
+            <ns0:Image uuid="{9ad366ef-6f8f-479d-b3e8-ae0c42ee8a8e}" />
+          </ns0:AttachedDevice>
+        </ns0:StorageController>
+      </ns0:StorageControllers>
+      <ns0:Snapshots>
+        <ns0:Snapshot name="reset" timeStamp="2018-04-10T18:59:25Z" uuid="{8f557f38-4073-42b2-8f7f-62660882304b}">
+          <ns0:Hardware>
+            <ns0:CPU count="8">
+              <ns0:PAE enabled="true" />
+              <ns0:LongMode enabled="false" />
+              <ns0:HardwareVirtExLargePages enabled="true" />
+            </ns0:CPU>
+            <ns0:Memory RAMSize="8192" />
+            <ns0:Paravirt provider="Default" />
+            <ns0:Boot>
+              <ns0:Order device="HardDisk" position="1" />
+              <ns0:Order device="None" position="2" />
+              <ns0:Order device="None" position="3" />
+              <ns0:Order device="None" position="4" />
+            </ns0:Boot>
+            <ns0:Display VRAMSize="4" />
+            <ns0:VideoCapture fps="25" options="ac_enabled=false" />
+            <ns0:RemoteDisplay enabled="false" />
+            <ns0:BIOS>
+              <ns0:IOAPIC enabled="true" />
+            </ns0:BIOS>
+            <ns0:Network>
+              <ns0:Adapter MACAddress="080027D9E314" cable="true" enabled="true" slot="0">
+                <ns0:DisabledModes>
+                  <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+                  <ns0:InternalNetwork name="intnet" />
+                  <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+                  <ns0:NATNetwork name="NatNetwork" />
+                </ns0:DisabledModes>
+                <ns0:GenericInterface driver="UDPTunnel">
+                  <ns0:Property name="dest" value="127.0.0.1" />
+                  <ns0:Property name="dport" value="10003" />
+                  <ns0:Property name="sport" value="10002" />
+                </ns0:GenericInterface>
+              </ns0:Adapter>
+              <ns0:Adapter MACAddress="080027636C05" enabled="true" slot="1">
+                <ns0:DisabledModes>
+                  <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+                  <ns0:InternalNetwork name="intnet" />
+                  <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+                  <ns0:NATNetwork name="NatNetwork" />
+                </ns0:DisabledModes>
+                <ns0:GenericInterface driver="UDPTunnel">
+                  <ns0:Property name="dest" value="127.0.0.1" />
+                  <ns0:Property name="dport" value="10007" />
+                  <ns0:Property name="sport" value="10006" />
+                </ns0:GenericInterface>
+              </ns0:Adapter>
+              <ns0:Adapter MACAddress="0800275A992A" enabled="true" slot="2">
+                <ns0:DisabledModes>
+                  <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+                  <ns0:InternalNetwork name="intnet" />
+                  <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+                  <ns0:NATNetwork name="NatNetwork" />
+                </ns0:DisabledModes>
+                <ns0:GenericInterface driver="UDPTunnel">
+                  <ns0:Property name="dest" value="127.0.0.1" />
+                  <ns0:Property name="dport" value="10011" />
+                  <ns0:Property name="sport" value="10010" />
+                </ns0:GenericInterface>
+              </ns0:Adapter>
+              <ns0:Adapter MACAddress="08002718D197" enabled="true" slot="3">
+                <ns0:DisabledModes>
+                  <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+                  <ns0:InternalNetwork name="intnet" />
+                  <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+                  <ns0:NATNetwork name="NatNetwork" />
+                </ns0:DisabledModes>
+                <ns0:GenericInterface driver="UDPTunnel">
+                  <ns0:Property name="dest" value="127.0.0.1" />
+                  <ns0:Property name="dport" value="10015" />
+                  <ns0:Property name="sport" value="10014" />
+                </ns0:GenericInterface>
+              </ns0:Adapter>
+              <ns0:Adapter MACAddress="0800276F19EC" cable="true" slot="4" type="Am79C973">
+                <ns0:DisabledModes>
+                  <ns0:InternalNetwork name="intnet" />
+                  <ns0:NATNetwork name="NatNetwork" />
+                </ns0:DisabledModes>
+                <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+              </ns0:Adapter>
+              <ns0:Adapter MACAddress="080027321D44" cable="true" slot="5" type="Am79C973">
+                <ns0:DisabledModes>
+                  <ns0:InternalNetwork name="intnet" />
+                  <ns0:NATNetwork name="NatNetwork" />
+                </ns0:DisabledModes>
+                <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+              </ns0:Adapter>
+              <ns0:Adapter MACAddress="080027495996" cable="true" slot="6" type="Am79C973">
+                <ns0:DisabledModes>
+                  <ns0:InternalNetwork name="intnet" />
+                  <ns0:NATNetwork name="NatNetwork" />
+                </ns0:DisabledModes>
+                <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+              </ns0:Adapter>
+              <ns0:Adapter MACAddress="080027278125" cable="true" slot="7" type="Am79C973">
+                <ns0:DisabledModes>
+                  <ns0:InternalNetwork name="intnet" />
+                  <ns0:NATNetwork name="NatNetwork" />
+                </ns0:DisabledModes>
+                <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+              </ns0:Adapter>
+            </ns0:Network>
+            <ns0:UART>
+              <ns0:Port IOBase="0x3f8" IRQ="4" enabled="true" hostMode="HostPipe" path="\\.\pipe\gns3_vbox\bd8ddb9e-3c10-40e0-a4db-e4716943ab9a" server="true" slot="0" />
+            </ns0:UART>
+            <ns0:AudioAdapter driver="DirectSound" enabled="true" enabledIn="false" enabledOut="false" />
+            <ns0:GuestProperties>
+              <ns0:GuestProperty flags="" name="/VirtualBox/HostInfo/GUI/LanguageID" timestamp="1523377797944458400" value="C" />
+              <ns0:GuestProperty flags="" name="NameInGNS3" timestamp="1523383790198908300" value="com.cisco.ios-xrv-1" />
+              <ns0:GuestProperty flags="" name="ProjectDirInGNS3" timestamp="1523383790364126700" value="C:\Users\jaberALU\GNS3\projects\ProjectNetConf\project-files\virtualbox\bd8ddb9e-3c10-40e0-a4db-e4716943ab9a" />
+            </ns0:GuestProperties>
+          </ns0:Hardware>
+          <ns0:StorageControllers>
+            <ns0:StorageController Bootable="true" PortCount="2" name="IDE" type="PIIX4" useHostIOCache="true">
+              <ns0:AttachedDevice device="0" hotpluggable="false" port="0" type="HardDisk">
+                <ns0:Image uuid="{9313c337-04e2-4d8b-aced-445729d9b8f3}" />
+              </ns0:AttachedDevice>
+            </ns0:StorageController>
+          </ns0:StorageControllers>
+          <ns0:Snapshots>
+            <ns0:Snapshot name="reset" timeStamp="2018-04-11T12:58:53Z" uuid="{ccaf3746-3ce5-46e7-a051-b55d776e9872}">
+              <ns0:Hardware>
+                <ns0:CPU count="8">
+                  <ns0:PAE enabled="true" />
+                  <ns0:LongMode enabled="false" />
+                  <ns0:HardwareVirtExLargePages enabled="true" />
+                </ns0:CPU>
+                <ns0:Memory RAMSize="8192" />
+                <ns0:Paravirt provider="Default" />
+                <ns0:Boot>
+                  <ns0:Order device="HardDisk" position="1" />
+                  <ns0:Order device="None" position="2" />
+                  <ns0:Order device="None" position="3" />
+                  <ns0:Order device="None" position="4" />
+                </ns0:Boot>
+                <ns0:Display VRAMSize="4" />
+                <ns0:VideoCapture fps="25" options="ac_enabled=false" />
+                <ns0:RemoteDisplay enabled="false" />
+                <ns0:BIOS>
+                  <ns0:IOAPIC enabled="true" />
+                </ns0:BIOS>
+                <ns0:Network>
+                  <ns0:Adapter MACAddress="080027D9E314" enabled="true" slot="0">
+                    <ns0:DisabledModes>
+                      <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+                      <ns0:InternalNetwork name="intnet" />
+                      <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+                      <ns0:NATNetwork name="NatNetwork" />
+                    </ns0:DisabledModes>
+                    <ns0:GenericInterface driver="UDPTunnel">
+                      <ns0:Property name="dest" value="127.0.0.1" />
+                      <ns0:Property name="dport" value="10001" />
+                      <ns0:Property name="sport" value="10000" />
+                    </ns0:GenericInterface>
+                  </ns0:Adapter>
+                  <ns0:Adapter MACAddress="080027636C05" enabled="true" slot="1">
+                    <ns0:DisabledModes>
+                      <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+                      <ns0:InternalNetwork name="intnet" />
+                      <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+                      <ns0:NATNetwork name="NatNetwork" />
+                    </ns0:DisabledModes>
+                    <ns0:GenericInterface driver="UDPTunnel">
+                      <ns0:Property name="dest" value="127.0.0.1" />
+                      <ns0:Property name="dport" value="10003" />
+                      <ns0:Property name="sport" value="10002" />
+                    </ns0:GenericInterface>
+                  </ns0:Adapter>
+                  <ns0:Adapter MACAddress="0800275A992A" enabled="true" slot="2">
+                    <ns0:DisabledModes>
+                      <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+                      <ns0:InternalNetwork name="intnet" />
+                      <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+                      <ns0:NATNetwork name="NatNetwork" />
+                    </ns0:DisabledModes>
+                    <ns0:GenericInterface driver="UDPTunnel">
+                      <ns0:Property name="dest" value="127.0.0.1" />
+                      <ns0:Property name="dport" value="10005" />
+                      <ns0:Property name="sport" value="10004" />
+                    </ns0:GenericInterface>
+                  </ns0:Adapter>
+                  <ns0:Adapter MACAddress="08002718D197" enabled="true" slot="3">
+                    <ns0:DisabledModes>
+                      <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+                      <ns0:InternalNetwork name="intnet" />
+                      <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+                      <ns0:NATNetwork name="NatNetwork" />
+                    </ns0:DisabledModes>
+                    <ns0:GenericInterface driver="UDPTunnel">
+                      <ns0:Property name="dest" value="127.0.0.1" />
+                      <ns0:Property name="dport" value="10007" />
+                      <ns0:Property name="sport" value="10006" />
+                    </ns0:GenericInterface>
+                  </ns0:Adapter>
+                  <ns0:Adapter MACAddress="0800276F19EC" cable="true" slot="4" type="Am79C973">
+                    <ns0:DisabledModes>
+                      <ns0:InternalNetwork name="intnet" />
+                      <ns0:NATNetwork name="NatNetwork" />
+                    </ns0:DisabledModes>
+                    <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+                  </ns0:Adapter>
+                  <ns0:Adapter MACAddress="080027321D44" cable="true" slot="5" type="Am79C973">
+                    <ns0:DisabledModes>
+                      <ns0:InternalNetwork name="intnet" />
+                      <ns0:NATNetwork name="NatNetwork" />
+                    </ns0:DisabledModes>
+                    <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+                  </ns0:Adapter>
+                  <ns0:Adapter MACAddress="080027495996" cable="true" slot="6" type="Am79C973">
+                    <ns0:DisabledModes>
+                      <ns0:InternalNetwork name="intnet" />
+                      <ns0:NATNetwork name="NatNetwork" />
+                    </ns0:DisabledModes>
+                    <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+                  </ns0:Adapter>
+                  <ns0:Adapter MACAddress="080027278125" cable="true" slot="7" type="Am79C973">
+                    <ns0:DisabledModes>
+                      <ns0:InternalNetwork name="intnet" />
+                      <ns0:NATNetwork name="NatNetwork" />
+                    </ns0:DisabledModes>
+                    <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+                  </ns0:Adapter>
+                </ns0:Network>
+                <ns0:UART>
+                  <ns0:Port IOBase="0x3f8" IRQ="4" enabled="true" hostMode="HostPipe" path="\\.\pipe\gns3_vbox\261db065-1fd2-40e7-bd86-ba2a8f15e457" server="true" slot="0" />
+                </ns0:UART>
+                <ns0:AudioAdapter driver="DirectSound" enabled="true" enabledIn="false" enabledOut="false" />
+                <ns0:GuestProperties>
+                  <ns0:GuestProperty flags="" name="/VirtualBox/HostInfo/GUI/LanguageID" timestamp="1523377797944458400" value="C" />
+                  <ns0:GuestProperty flags="" name="NameInGNS3" timestamp="1523386899501075900" value="com.cisco.ios-xrv-1" />
+                  <ns0:GuestProperty flags="" name="ProjectDirInGNS3" timestamp="1523386899583196000" value="C:\Users\jaberALU\GNS3\projects\cf\project-files\virtualbox\261db065-1fd2-40e7-bd86-ba2a8f15e457" />
+                </ns0:GuestProperties>
+              </ns0:Hardware>
+              <ns0:StorageControllers>
+                <ns0:StorageController Bootable="true" PortCount="2" name="IDE" type="PIIX4" useHostIOCache="true">
+                  <ns0:AttachedDevice device="0" hotpluggable="false" port="0" type="HardDisk">
+                    <ns0:Image uuid="{4ad8ceaf-b3e8-4dda-82d1-89dbe7e85537}" />
+                  </ns0:AttachedDevice>
+                </ns0:StorageController>
+              </ns0:StorageControllers>
+            </ns0:Snapshot>
+          </ns0:Snapshots>
+        </ns0:Snapshot>
+      </ns0:Snapshots>
+    </ns0:Snapshot>
+    <ns0:Hardware>
+      <ns0:CPU count="8">
+        <ns0:PAE enabled="true" />
+        <ns0:LongMode enabled="false" />
+        <ns0:HardwareVirtExLargePages enabled="true" />
+      </ns0:CPU>
+      <ns0:Memory RAMSize="8192" />
+      <ns0:Paravirt provider="Default" />
+      <ns0:Boot>
+        <ns0:Order device="HardDisk" position="1" />
+        <ns0:Order device="None" position="2" />
+        <ns0:Order device="None" position="3" />
+        <ns0:Order device="None" position="4" />
+      </ns0:Boot>
+      <ns0:Display VRAMSize="4" />
+      <ns0:VideoCapture fps="25" options="ac_enabled=false" />
+      <ns0:RemoteDisplay enabled="false" />
+      <ns0:BIOS>
+        <ns0:IOAPIC enabled="true" />
+      </ns0:BIOS>
+      <ns0:Network>
+        <ns0:Adapter MACAddress="080027D9E314" cable="true" enabled="true" slot="0">
+          <ns0:DisabledModes>
+            <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+            <ns0:InternalNetwork name="intnet" />
+            <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+            <ns0:NATNetwork name="NatNetwork" />
+          </ns0:DisabledModes>
+          <ns0:GenericInterface driver="UDPTunnel">
+            <ns0:Property name="dest" value="127.0.0.1" />
+            <ns0:Property name="dport" value="10002" />
+            <ns0:Property name="sport" value="10001" />
+          </ns0:GenericInterface>
+        </ns0:Adapter>
+        <ns0:Adapter MACAddress="080027636C05" enabled="true" slot="1">
+          <ns0:DisabledModes>
+            <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+            <ns0:InternalNetwork name="intnet" />
+            <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+            <ns0:NATNetwork name="NatNetwork" />
+          </ns0:DisabledModes>
+          <ns0:GenericInterface driver="UDPTunnel">
+            <ns0:Property name="dest" value="127.0.0.1" />
+            <ns0:Property name="dport" value="10004" />
+            <ns0:Property name="sport" value="10003" />
+          </ns0:GenericInterface>
+        </ns0:Adapter>
+        <ns0:Adapter MACAddress="0800275A992A" enabled="true" slot="2">
+          <ns0:DisabledModes>
+            <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+            <ns0:InternalNetwork name="intnet" />
+            <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+            <ns0:NATNetwork name="NatNetwork" />
+          </ns0:DisabledModes>
+          <ns0:GenericInterface driver="UDPTunnel">
+            <ns0:Property name="dest" value="127.0.0.1" />
+            <ns0:Property name="dport" value="10006" />
+            <ns0:Property name="sport" value="10005" />
+          </ns0:GenericInterface>
+        </ns0:Adapter>
+        <ns0:Adapter MACAddress="08002718D197" enabled="true" slot="3">
+          <ns0:DisabledModes>
+            <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+            <ns0:InternalNetwork name="intnet" />
+            <ns0:HostOnlyInterface name="VirtualBox Host-Only Ethernet Adapter" />
+            <ns0:NATNetwork name="NatNetwork" />
+          </ns0:DisabledModes>
+          <ns0:GenericInterface driver="UDPTunnel">
+            <ns0:Property name="dest" value="127.0.0.1" />
+            <ns0:Property name="dport" value="10008" />
+            <ns0:Property name="sport" value="10007" />
+          </ns0:GenericInterface>
+        </ns0:Adapter>
+        <ns0:Adapter MACAddress="0800276F19EC" cable="true" slot="4" type="Am79C973">
+          <ns0:DisabledModes>
+            <ns0:InternalNetwork name="intnet" />
+            <ns0:NATNetwork name="NatNetwork" />
+          </ns0:DisabledModes>
+          <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+        </ns0:Adapter>
+        <ns0:Adapter MACAddress="080027321D44" cable="true" slot="5" type="Am79C973">
+          <ns0:DisabledModes>
+            <ns0:InternalNetwork name="intnet" />
+            <ns0:NATNetwork name="NatNetwork" />
+          </ns0:DisabledModes>
+          <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+        </ns0:Adapter>
+        <ns0:Adapter MACAddress="080027495996" cable="true" slot="6" type="Am79C973">
+          <ns0:DisabledModes>
+            <ns0:InternalNetwork name="intnet" />
+            <ns0:NATNetwork name="NatNetwork" />
+          </ns0:DisabledModes>
+          <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+        </ns0:Adapter>
+        <ns0:Adapter MACAddress="080027278125" cable="true" slot="7" type="Am79C973">
+          <ns0:DisabledModes>
+            <ns0:InternalNetwork name="intnet" />
+            <ns0:NATNetwork name="NatNetwork" />
+          </ns0:DisabledModes>
+          <ns0:BridgedInterface name="Intel(R) Wireless-N 7260" />
+        </ns0:Adapter>
+      </ns0:Network>
+      <ns0:UART>
+        <ns0:Port IOBase="0x3f8" IRQ="4" enabled="true" hostMode="HostPipe" path="\\.\pipe\gns3_vbox\302baa7e-f64f-4317-814d-4edeb68362dc" server="true" slot="0" />
+      </ns0:UART>
+      <ns0:AudioAdapter driver="DirectSound" enabled="true" enabledIn="false" enabledOut="false" />
+      <ns0:GuestProperties>
+        <ns0:GuestProperty flags="" name="/VirtualBox/HostInfo/GUI/LanguageID" timestamp="1523377797944458400" value="C" />
+        <ns0:GuestProperty flags="" name="NameInGNS3" timestamp="1523451825771713400" value="com.cisco.ios-xrv-1" />
+        <ns0:GuestProperty flags="" name="ProjectDirInGNS3" timestamp="1523451826059133500" value="C:\Users\jaberALU\GNS3\projects\CNew\project-files\virtualbox\302baa7e-f64f-4317-814d-4edeb68362dc" />
+      </ns0:GuestProperties>
+    </ns0:Hardware>
+    <ns0:StorageControllers>
+      <ns0:StorageController Bootable="true" PortCount="2" name="IDE" type="PIIX4" useHostIOCache="true">
+        <ns0:AttachedDevice device="0" hotpluggable="false" port="0" type="HardDisk">
+          <ns0:Image uuid="{3ded66eb-bd22-4886-8254-d51c94aaaf02}" />
+        </ns0:AttachedDevice>
+      </ns0:StorageController>
+    </ns0:StorageControllers>
+  </ns0:Machine>
+</ns0:VirtualBox>
